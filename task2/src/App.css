@@ -1,0 +1,22 @@
+body{
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#main_heading{
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+#main_container{
+    margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 40vw;
+    background-color: rgb(247, 235, 235);
+}
