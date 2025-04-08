@@ -1,22 +1,154 @@
-body{
-    background-color: #282c34;
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-#main_heading{
-    text-align: center;
-    font-size: 2em;
-    color: white;
-}
-
-#main_container{
-    margin: auto;
-    padding: auto;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: rgb(235, 109, 51);
+    color: #333;
+  }
+  
+  #main-heading-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 80vh;
-    width: 40vw;
-    background-color: rgb(247, 235, 235);
-}
+    padding-top: 2rem;
+  }
+  
+  #main-heading {
+    color: rgb(240, 233, 233);
+    text-align: center;
+  }
+  
+  .todo-box {
+    background: #f0f5f9;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 0 0 0.94rem rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    position: relative;
+  }
+  
+  .input-area {
+    display: flex;
+    margin: 0.94rem 0;
+  }
+  
+  .input-area input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .input-area button {
+    padding: 0.5rem 0.75rem;
+    background-color: #ccc;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .pending-text {
+    margin: 0.5rem 0;
+    font-weight: 500;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    display: flex;
+    flex-direction: column;
+    background-color: #dbe2ef;
+    padding: 0.4rem 0.6rem;
+    margin: 0.3rem 0;
+    border-radius: 6px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 0.85rem;
+  }
+  
+   
+  #btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.4rem;
+    margin-top: 0.3rem;
+  }
+  
+  .work-btns {
+    background-color: rgb(123, 123, 133);
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-weight: bold;
+    padding: 0.6rem;
+    background-color: #eceaea;
+    border-radius: 12px;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .actions button {
+    border: none;
+    background: transparent;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Media Queries */
+  @media screen and (max-width: 600px) {
+    .todo-box {
+      width: 90%;
+      padding: 1rem;
+    }
+  
+    .input-area {
+      flex-direction: column;
+    }
+  
+    .input-area input,
+    .input-area button {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 0.5rem;
+    }
+  
+    #task-details {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #btns {
+      justify-content: flex-start;
+    }
+  
+    .actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  .dark-app{
+    background-color: #333;
+  }
