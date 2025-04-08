@@ -84,14 +84,14 @@ function App() {
 
   return (
     <>
+        <div className={darkMode ? "dark-app" : "app"}>
     <div id="main-heading-container">
         <h1 id="main-heading">Daily task manager</h1>
         <button className="toggle-theme" onClick={toggleDarkMode}>
           {darkMode ? "☀️" : "🌙"}
         </button>
       </div>
-        <div className={darkMode ? "dark-app" : "app"}>
-      <div className="todo-box">
+      <div className={darkMode ? "dark-todo-box" : "todo-box"}>
         <div className="input-area">
           <input
             type="text"

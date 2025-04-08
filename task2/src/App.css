@@ -4,6 +4,8 @@ body {
     font-family: "Segoe UI", sans-serif;
     background-color: rgb(235, 109, 51);
     color: #333;
+    /* background-color: #333; */
+
   }
   
   #main-heading-container {
@@ -150,5 +152,18 @@ body {
   }
   
   .dark-app{
-    background-color: #333;
+    background-color: rgb(19, 18, 18);
+    height: 100vh;
+  }
+
+  .dark-todo-box{
+    background: rgb(109, 104, 104);
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 0 0 0.94rem rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    position: relative;
   }
